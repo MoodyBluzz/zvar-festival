@@ -30,7 +30,6 @@
     cursor: crosshair;
   }
 
-  /* ── NOISE OVERLAY ── */
   body::before {
     content: '';
     position: fixed; inset: 0; z-index: 0;
@@ -39,7 +38,6 @@
     opacity: 0.6;
   }
 
-  /* ── AMBIENT GLOWS ── */
   .glow-topleft {
     position: fixed; top: -200px; left: -200px;
     width: 700px; height: 700px;
@@ -55,14 +53,12 @@
   }
   @keyframes pulse { from { opacity: 0.6; } to { opacity: 1; } }
 
-  /* ── WRAPPER ── */
   .site-wrapper {
     position: relative; z-index: 1;
     max-width: 1400px; margin: 0 auto;
     padding: 0 32px;
   }
 
-  /* ── NAV ── */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     padding: 20px 40px;
@@ -91,7 +87,6 @@
     color: var(--grey);
   }
 
-  /* ── SECTIONS ── */
   section {
     min-height: 100vh;
     padding: 160px 0 100px;
@@ -136,7 +131,6 @@
     line-height: 1.6;
   }
 
-  /* ── CARDS ── */
   .card {
     background: var(--card);
     border: 1px solid var(--card-border);
@@ -186,7 +180,6 @@
     .site-wrapper { padding: 0 20px; }
   }
 
-  /* ── SECTION 1: HERO ── */
   #hero { min-height: 100vh; padding-top: 120px; }
   .hero-tagline {
     font-size: 18px;
@@ -218,8 +211,6 @@
     color: var(--lime);
   }
 
-  /* ── SECTION 2: ARCHITECTURE ── */
-  /* ── SECTION 3: TIMELINE ── */
   .timeline-item {
     display: flex; gap: 48px; align-items: flex-start;
     border-left: 1px solid var(--card-border);
@@ -244,7 +235,6 @@
   }
   .tl-text.highlight { color: var(--lime); }
 
-  /* ── SECTION 4: FESTIVAL DAY ── */
   .schedule-item {
     display: flex; justify-content: space-between; align-items: center;
     padding: 20px 32px;
@@ -273,7 +263,6 @@
     line-height: 1.4;
   }
 
-  /* ── SECTION 5: MUSIC ── */
   .music-main {
     background: linear-gradient(135deg, rgba(255,255,250,0.06) 0%, var(--card) 100%);
   }
@@ -311,7 +300,6 @@
   }
   .postman-btn svg { width: 14px; height: 14px; opacity: 0.6; }
 
-  /* ── SECTION 6: MEDIA ── */
   .media-tag {
     font-size: 11px;
     letter-spacing: 0.25em;
@@ -320,7 +308,6 @@
     margin-top: 28px;
   }
 
-  /* ── SECTION 7: MARKET ── */
   .zone-label {
     font-size: 10px;
     letter-spacing: 0.3em;
@@ -329,7 +316,6 @@
     margin-bottom: 20px;
   }
 
-  /* ── SECTION 8: PARTNERS ── */
   .partners-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 48px; }
   .partner-btn {
     padding: 12px 28px;
@@ -361,7 +347,6 @@
     transform: translateX(0);
   }
 
-  /* ── SECTION 9: BUDGET ── */
   .budget-table {
     border: 1px solid var(--card-border);
     border-radius: 24px;
@@ -419,7 +404,6 @@
     font-size: 11px;
   }
 
-  /* ── SECTION 10: PLAN B ── */
   .planb-old {
     text-decoration: line-through;
     color: var(--grey);
@@ -435,7 +419,6 @@
   .optimization-list {
     list-style: none;
     margin-top: 24px;
-    space-y: 16px;
   }
   .optimization-list li {
     display: flex; align-items: flex-start; gap: 12px;
@@ -451,8 +434,6 @@
     flex-shrink: 0;
   }
 
-  /* ── SECTION 11: PLAN C ── */
-  /* ── SECTION 12: CHARITY ── */
   .charity-pct {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(80px, 14vw, 160px);
@@ -490,7 +471,6 @@
     transform: translateY(-2px);
   }
 
-  /* ── SECTION 13: FINALE ── */
   #finale {
     min-height: 80vh;
     text-align: center;
@@ -520,7 +500,6 @@
     line-height: 1.7;
   }
 
-  /* ── FOOTER ── */
   footer {
     position: relative; z-index: 1;
     padding: 60px 0;
@@ -532,11 +511,8 @@
     color: var(--grey);
   }
 
-  /* ── DIVIDER ── */
   .spacer { margin-top: 56px; }
-  .spacer-sm { margin-top: 32px; }
 
-  /* ── SCROLL INDICATOR ── */
   .scroll-hint {
     position: fixed; bottom: 32px; right: 40px; z-index: 50;
     display: flex; flex-direction: column; align-items: center; gap: 8px;
@@ -563,7 +539,7 @@
 <nav>
   <div class="nav-logo">ZVAR</div>
   <div class="nav-info">Düsseldorf · 2027</div>
-  <div class="nav-date">Weltkunstzimmer</div>
+  <div class="nav-date">Areal Böhler</div>
 </nav>
 
 <div class="scroll-hint">
@@ -593,7 +569,7 @@
     </div>
 
     <div class="tags-row">
-      <div class="tag">Weltkunstzimmer</div>
+      <div class="tag">Areal Böhler</div>
       <div class="tag">Düsseldorf</div>
       <div class="tag">March 2027</div>
       <div class="tag lime">100% Donations → Ukraine</div>
@@ -604,28 +580,28 @@
   <section id="architecture">
     <div class="section-num">02 — Indoor Festival Architecture</div>
     <h2 class="section-title">Designed for<br>Raw March Weather</h2>
-    <p class="section-sub">Fully indoor experience / four distinct zones</p>
+    <p class="section-sub">Open-space warehouse layout / dynamic zones</p>
 
     <div class="grid-2 spacer">
       <div class="card">
         <div class="card-num">01</div>
-        <h3>Main Stage</h3>
-        <p>Daytime panels, screenings, live talks and the evening music program in a cinematic industrial setup.</p>
+        <h3>Main Warehouse Stage</h3>
+        <p>Daytime panels, screenings, live talks and the evening music program in a raw, cohesive industrial hangar setup.</p>
       </div>
       <div class="card">
         <div class="card-num">02</div>
-        <h3>Warehouse Market</h3>
-        <p>20–25 curated pop-ups: independent fashion labels, art books, zines, tattoo studio and design objects.</p>
+        <h3>Curated Market Area</h3>
+        <p>20–25 independent fashion labels, art books, zines, tattoo studio and design objects arranged openly inside the main space.</p>
       </div>
       <div class="card">
         <div class="card-num">03</div>
-        <h3>Concept Bar</h3>
-        <p>Minimal industrial bar with Ukrainian infusions, tea, coffee and networking atmosphere.</p>
+        <h3>Industrial Concept Bar</h3>
+        <p>Minimalist bar area featuring Ukrainian infusions, specialized tea, coffee and an open networking atmosphere.</p>
       </div>
       <div class="card">
         <div class="card-num">04</div>
-        <h3>Outdoor Courtyard</h3>
-        <p>Smoking area and quick conversations between sessions — preserving the indoor energy flow.</p>
+        <h3>Interactive Tech Zone</h3>
+        <p>FPV drone flight simulators and digital installations integrated seamlessly into the warehouse architecture.</p>
       </div>
     </div>
   </section>
@@ -715,9 +691,9 @@
         <div class="card-label">Daytime Live Stage</div>
         <div class="artist-name">Postman</div>
         <p>Acoustic indie-folk performance aligned with the intellectual daytime atmosphere. Alternative options include European-based Ukrainian indie acts and Berlin/Cologne resident artists.</p>
-        <a href="https://www.instagram.com/postmansings" target="_blank" rel="noopener" class="postman-btn">
+        <a href="https://www.instagram.com/postmansings/" target="_blank" rel="noopener" class="postman-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          postmanband.com
+          Instagram
         </a>
       </div>
       <div class="card music-highlight">
@@ -860,7 +836,7 @@
           <div style="display: flex; justify-content: space-between;"><span>Marketing</span><span>€1,000</span></div>
           <div style="display: flex; justify-content: space-between;"><span>Security</span><span>€500</span></div>
         </div>
-        <p style="margin-top: 28px; font-size: 14px; color: #c0c0b0; line-height: 1.7;">The audience experience remains strong — the industrial indoor atmosphere of Weltkunstzimmer becomes the core visual asset.</p>
+        <p style="margin-top: 28px; font-size: 14px; color: #c0c0b0; line-height: 1.7;">The audience experience remains strong — the industrial open atmosphere of Areal Böhler becomes the core visual asset.</p>
       </div>
     </div>
   </section>
@@ -903,7 +879,7 @@
       All festival donations are transferred directly to humanitarian support initiatives for Ukraine through Blau-Gelbes Kreuz e.V.
     </p>
 
-    <a href="https://www.bgk-verein.de/?gad_source=1&gad_campaignid=20257131749&gbraid=0AAAAApOwQyn42O9saYRuGJtZFURRVwmtl&gclid=CjwKCAjw5s_QBhAdEiwADD_gBsbkie9ujeXszinvCINTUxMQMOFsIb0SvA438bK8ALGGujR_I38fVBoCKC8QAvD_BwE" target="_blank" rel="noopener" class="bgk-btn">
+    <a href="https://www.bgk-verein.de/" target="_blank" rel="noopener" class="bgk-btn">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
       Blau-Gelbes Kreuz e.V.
     </a>
@@ -936,13 +912,12 @@
 
   <footer>
     <div>ZVAR Festival — Düsseldorf 2027</div>
-    <div>Weltkunstzimmer · NRW · DE</div>
+    <div>Areal Böhler · NRW · DE</div>
   </footer>
 
-</div><!-- /site-wrapper -->
+</div>
 
 <script>
-  // Intersection Observer for section reveals
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -953,14 +928,12 @@
 
   document.querySelectorAll('section').forEach(s => observer.observe(s));
 
-  // Subtle parallax on glow
   document.addEventListener('mousemove', (e) => {
     const x = (e.clientX / window.innerWidth - 0.5) * 30;
     const y = (e.clientY / window.innerHeight - 0.5) * 30;
     document.querySelector('.glow-topleft').style.transform = `translate(${x}px, ${y}px)`;
   });
 
-  // Hide scroll hint after scroll
   window.addEventListener('scroll', () => {
     const hint = document.querySelector('.scroll-hint');
     if (window.scrollY > 200) hint.style.opacity = '0';
